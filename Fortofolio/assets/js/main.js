@@ -93,25 +93,6 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
-const tabs = document.querySelectorAll('[data-target]'),
-    tabContents = document.querySelectorAll('[data-content]')
-
-    tabContents.forEach(tab =>{
-        tab.addEventListener('click', () =>{
-            const target = document.querySelector(tab,dataset,target)
-
-            tabContents.forEach(tabContent =>{
-                tabContent.classList.remove('qualification_active')
-            })
-            target.classList.add('qualification_active')
-
-            tabs.forEach(tab =>{
-                tab.classList.remove('qualification_active')
-            })
-            tab.classList.add('qualification_active')
-        })
-    })
-
 /*==================== SWIPER DISCOVER ====================*/
 let swiper = new Swiper(".discover__container", {
     effect: "coverflow",
@@ -125,4 +106,26 @@ let swiper = new Swiper(".discover__container", {
     },
 })
 
+/*==================== SCROLL UP ====================*/
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if(this.scrollY >= 560) scrollTopUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 
+/*==================== LIGHT DARK ====================*/
+const lightMode = document.querySelector('.light-mode');
+const darkMode = document.querySelector('.dark-mode');
+
+lightMode.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode-active');
+    darkMode.classList.toggle("active");
+    lightMode.classList.toggle("active");
+});
+
+darkMode.addEventListener('click', () => {
+    document.body.classList.remove("dark-mode-active");
+    darkMode.classList.remove("active");
+    lightMode.classList.remove("active");
+});
