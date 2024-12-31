@@ -1,9 +1,10 @@
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import 'config/variables';
-@import 'base/base';
-@import 'components/gallery';
-@import 'components/breakpoints';
+@import '/Fortofolio/assets/scss/base/base';
+@import '/Fortofolio/assets/scss/components/breakpoints';
+@import '/Fortofolio/assets/scss/components/gallery';
+@import '/Fortofolio/assets/scss/config/variables';
 
 /*===== VARIABLES CSS =====*/
 :root{

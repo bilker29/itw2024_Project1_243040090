@@ -94,14 +94,14 @@ sr.reveal('.home__social-icon',{ interval: 200});
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
 /*=============== SWIPER JS GALLERY ===============*/
-let swiperCards = new Swiper(".gallery-cards", {
+let swiperCards = new Swiper(".gallery1-cards", {
     loop: true,
     loopedSlides: 5,
     cssMode: true,
     effect: 'fade',
   });
     
-  let swiperThumbs = new Swiper(".gallery-thumbs", {
+  let swiperThumbs = new Swiper(".gallery1-thumbs", {
     loop: true,
     loopedSlides: 5,
     slidesPerView: 3,

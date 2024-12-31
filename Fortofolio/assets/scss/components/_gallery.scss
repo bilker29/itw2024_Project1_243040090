@@ -1,5 +1,5 @@
 /*=============== GALLERY ===============*/
-.gallery{
+.gallery1{
     height: 100vh;
     display: grid;
     align-content: center;
@@ -73,34 +73,34 @@
 }
 
 /* Swiper class */
-.gallery-cards,
-.gallery-thumbs{
+.gallery1-cards,
+.gallery1-thumbs{
     width: 260px;
 }
 
-.gallery-cards:hover .gallery__img{
+.gallery1-cards:hover .gallery__img{
     transform: scale(1.1);
 }
 
-.gallery .swiper-wrapper{
+.gallery1 .swiper-wrapper{
     padding: 2.5rem 0;
 }
 
-.gallery-thumbs{
+.gallery1-thumbs{
     height: 132px;
 }
 
 /* Active thumbnail */
-.swiper-slide-active .gallery__thumbnail{
+.swiper-slide-active .gallery1__thumbnail{
     transform: translateY(-1.25rem) scale(1.2);
 }
 
 /* Rotate thumbnail */
-.swiper-slide-next .gallery__thumbnail{
+.swiper-slide-next .gallery1__thumbnail{
     transform: rotate(15deg);
 }
 
-.swiper-slide-prev .gallery__thumbnail{
+.swiper-slide-prev .gallery1__thumbnail{
     transform: rotate(-15deg);
 }
 
@@ -137,7 +137,7 @@
 }
 
 /* Other swiper settings */
-.gallery-cards::after{
+.gallery1-cards::after{
     content: '';
     width: 100%;
     height: 100%;

@@ -612,14 +612,14 @@ img {
   }
 }
 
-.gallery {
+.gallery1 {
   height: 100vh;
   display: grid;
   align-content: center;
   justify-content: center;
 }
 
-.gallery__card {
+.gallery1__card {
   position: relative;
   width: 208px;
   height: 268px;
@@ -629,19 +629,19 @@ img {
   overflow: hidden;
 }
 
-.gallery__img, 
-.gallery__card::after, 
-.gallery__data {
+.gallery1__img, 
+.gallery1__card::after, 
+.gallery1__data {
   position: absolute;
 }
 
-.gallery__img {
+.gallery1__img {
   inset: 0;
   margin: auto;
   transition: transform .3s;
 }
 
-.gallery__card::after {
+.gallery1__card::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -652,31 +652,31 @@ img {
   z-index: 1;
 }
 
-.gallery__data {
+.gallery1__data {
   bottom: 1.5rem;
   left: 1.75rem;
   z-index: 10;
 }
 
-.gallery__title, 
-.gallery__subtitle {
+.gallery1__title, 
+.gallery1__subtitle {
   color: var(--text-color);
   font-weight: 500;
 }
 
-.gallery__title {
+.gallery1__title {
   font-size: var(--h3-font-size);
 }
 
-.gallery__subtitle {
+.gallery1__subtitle {
   font-size: var(--smaller-font-size);
 }
 
-.gallery__overflow {
+.gallery1__overflow {
   position: relative;
 }
 
-.gallery__thumbnail {
+.gallery1__thumbnail {
   position: relative;
   width: 60px;
   height: 60px;
@@ -688,41 +688,41 @@ img {
   transition: transform .3s;
 }
 
-.gallery__thumbnail-img {
+.gallery1__thumbnail-img {
   position: absolute;
   inset: 0;
   margin: auto;
 }
 
 /* Swiper class */
-.gallery-cards,
-.gallery-thumbs {
+.gallery1-cards,
+.gallery1-thumbs {
   width: 260px;
 }
 
-.gallery-cards:hover .gallery__img {
+.gallery1-cards:hover .gallery__img {
   transform: scale(1.1);
 }
 
-.gallery .swiper-wrapper {
+.gallery1 .swiper-wrapper {
   padding: 2.5rem 0;
 }
 
-.gallery-thumbs {
+.gallery1-thumbs {
   height: 132px;
 }
 
 /* Active thumbnail */
-.swiper-slide-active .gallery__thumbnail {
+.swiper-slide-active .gallery1__thumbnail {
   transform: translateY(-1.25rem) scale(1.2);
 }
 
 /* Rotate thumbnail */
-.swiper-slide-next .gallery__thumbnail {
+.swiper-slide-next .gallery1__thumbnail {
   transform: rotate(15deg);
 }
 
-.swiper-slide-prev .gallery__thumbnail {
+.swiper-slide-prev .gallery1__thumbnail {
   transform: rotate(-15deg);
 }
 
@@ -759,7 +759,7 @@ img {
 }
 
 /* Other swiper settings */
-.gallery-cards::after {
+.gallery1-cards::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -784,16 +784,16 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 1024px) {
-  .gallery__card {
+  .gallery1__card {
     width: 220px;
     height: 290px;
   }
-  .gallery__thumbnail {
+  .gallery1__thumbnail {
     width: 65px;
     height: 65px;
   }
-  .gallery-cards,
-  .gallery-thumbs {
+  .gallery1-cards,
+  .gallery1-thumbs {
     width: 280px;
   }
 }

@@ -9,7 +9,7 @@
 
 /* For medium devices */
 @media screen and (min-width: 1024px){
-    .gallery{
+    .gallery1{
         &__card{
             width: 220px;
             height: 290px;
@@ -20,8 +20,8 @@
         }
     }
 
-    .gallery-cards,
-    .gallery-thumbs{
+    .gallery1-cards,
+    .gallery1-thumbs{
         width: 280px;
     }
 }
