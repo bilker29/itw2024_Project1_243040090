@@ -93,6 +93,33 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
+/*=============== SWIPER JS GALLERY ===============*/
+let swiperCards = new Swiper(".gallery-cards", {
+    loop: true,
+    loopedSlides: 5,
+    cssMode: true,
+    effect: 'fade',
+  });
+    
+  let swiperThumbs = new Swiper(".gallery-thumbs", {
+    loop: true,
+    loopedSlides: 5,
+    slidesPerView: 3,
+    centeredSlides: true,
+    slideToClickedSlide: true,
+  
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  
+  swiperThumbs.controller.control = swiperCards;
+
 /*==================== SWIPER DISCOVER ====================*/
 let swiper = new Swiper(".discover__container", {
     effect: "coverflow",
